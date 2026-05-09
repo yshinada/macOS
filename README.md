@@ -1,4 +1,4 @@
-# Yuji Software 公開サイト
+# YUJÌ960 Software 公開サイト
 
 個人開発プログラムの配布用サイトです。
 
