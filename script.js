@@ -18,6 +18,26 @@ const programs = [
     summary: "バッテリー状態を見やすく確認するための軽量モニターです。",
     tags: ["macOS", "バッテリー", "常駐"],
     download: "https://github.com/yshinada/web/releases/download/ysbatterymonitor-v1.0.0/YsBatteryMonitor-mac.dmg"
+  },
+  {
+    name: "CPULoader",
+    platform: "mac",
+    version: "v1.5",
+    icon: "CL",
+    color: "#8f5fd7",
+    summary: "CPU負荷を調整しながら動作確認できる、テスト用ユーティリティです。",
+    tags: ["macOS", "CPU", "テスト"],
+    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/CPULoader-mac.zip"
+  },
+  {
+    name: "YsDiskMonitor",
+    platform: "mac",
+    version: "v1.0.0",
+    icon: "YD",
+    color: "#2f8d7e",
+    summary: "ディスク使用率と空き容量をメニューバーで確認できる軽量モニターです。",
+    tags: ["macOS", "ディスク", "常駐"],
+    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/YsDiskMonitor-mac.dmg"
   }
 ];
 
