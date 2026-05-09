@@ -244,11 +244,15 @@ h3 {
 }
 
 .filter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 38px;
   border: 0;
   border-radius: 6px;
   color: var(--muted);
   background: transparent;
+  text-decoration: none;
   font: inherit;
   font-size: 0.9rem;
   font-weight: 800;
