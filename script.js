@@ -22,7 +22,6 @@ const programs = [
 ];
 
 const list = document.querySelector("#program-list");
-const filterButtons = document.querySelectorAll(".filter");
 const year = document.querySelector("#year");
 
 function createProgramCard(program) {
@@ -48,20 +47,10 @@ function createProgramCard(program) {
   return card;
 }
 
-function renderPrograms(filter = "all") {
+function renderPrograms() {
   list.replaceChildren();
-  programs
-    .filter((program) => filter === "all" || program.platform === filter)
-    .forEach((program) => list.appendChild(createProgramCard(program)));
+  programs.forEach((program) => list.appendChild(createProgramCard(program)));
 }
-
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    filterButtons.forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
-    renderPrograms(button.dataset.filter);
-  });
-});
 
 year.textContent = new Date().getFullYear();
 renderPrograms();
