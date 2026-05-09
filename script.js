@@ -18,16 +18,6 @@ const programs = [
     summary: "バッテリー状態を見やすく確認するための軽量モニターです。",
     tags: ["macOS", "バッテリー", "常駐"],
     download: "https://github.com/yshinada/web/releases/download/ysbatterymonitor-v1.0.0/YsBatteryMonitor-mac.dmg"
-  },
-  {
-    name: "Sapporo Nishi Weather",
-    platform: "windows",
-    version: "v1.0.0",
-    icon: "SW",
-    color: "#b86434",
-    summary: "札幌市西区の天気を素早く確認できるWindows向けツールです。",
-    tags: ["Windows", "天気", "地域情報"],
-    download: "#"
   }
 ];
 
