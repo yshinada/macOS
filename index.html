@@ -81,6 +81,41 @@
             </div>
             <div class="ai-log">
               <article class="ai-entry">
+                <time datetime="2026-04-26T18:41">2026.04.26 18:41</time>
+                <h3>GitHub Pagesとは</h3>
+                <p class="ai-prompt">Q. GitHub Pages とは</p>
+                <p class="ai-response">
+                  GitHub Pages は、GitHub に置いた index.html などのファイルを、そのまま無料でWebサイトとして公開できる機能です。
+                </p>
+                <p>
+                  今回作った index.html、style.css、script.js、assets/hero-software-workspace.png を GitHub にアップロードすると、
+                  https://ユーザー名.github.io/リポジトリ名/ のようなURLで公開できます。
+                </p>
+                <p>
+                  WordPress.com と違って、今回作った HTML / CSS / JavaScript をほぼそのまま使えます。
+                  個人開発ソフトの配布ページには GitHub Pages がかなり相性のよい公開方法です。
+                </p>
+                <p>
+                  手順は、GitHubアカウントを作る、新しいリポジトリを作る、サイトファイルをアップロードする、
+                  Settings → Pages を開く、main ブランチを選んで公開する、表示されたURLにアクセスする、という流れです。
+                </p>
+                <p>
+                  配布ファイルが大きい場合、DMG や EXE は GitHub Releases に置いて、サイト側からそこへリンクするのがおすすめです。
+                </p>
+                <p class="ai-prompt">Q. リポジトリの Settings → Pages を開くはどこですか</p>
+                <p class="ai-response">
+                  リポジトリ画面の上部メニューにある Settings を開き、左側メニューの Code and automation の中にある Pages をクリックします。
+                </p>
+                <p>
+                  Pages の画面で Source を Deploy from a branch にし、Branch は main、フォルダは /root を選んで Save を押します。
+                  しばらく待つとページ上部に公開URLが表示されます。
+                </p>
+                <p>
+                  まだリポジトリに index.html などが入っていない場合は、Code に戻って Add file → Upload files から
+                  index.html、style.css、script.js、assets フォルダをアップロードし、Commit changes を押してから Pages 設定に戻ります。
+                </p>
+              </article>
+              <article class="ai-entry">
                 <time datetime="2026-05-10">2026.05.10</time>
                 <h3>GitHub Pagesで公開サイトを作成</h3>
                 <p>
