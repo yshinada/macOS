@@ -61,7 +61,6 @@ function createProgramCard(program) {
     </div>
     <div class="card-actions">
       <a class="button primary" href="${program.download}">ダウンロード</a>
-      <a class="button secondary" href="#support">問い合わせ</a>
     </div>
   `;
   return card;
