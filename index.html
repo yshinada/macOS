@@ -79,59 +79,127 @@
               <span></span>
               <strong>codex-log</strong>
             </div>
-            <div class="ai-log">
-              <article class="ai-entry">
-                <time datetime="2026-04-26T18:41">2026.04.26 18:41</time>
-                <h3>GitHub Pagesとは</h3>
-                <p class="ai-prompt">Q. GitHub Pages とは</p>
-                <p class="ai-response">
-                  GitHub Pages は、GitHub に置いた index.html などのファイルを、そのまま無料でWebサイトとして公開できる機能です。
-                </p>
-                <p>
-                  今回作った index.html、style.css、script.js、assets/hero-software-workspace.png を GitHub にアップロードすると、
-                  https://ユーザー名.github.io/リポジトリ名/ のようなURLで公開できます。
-                </p>
-                <p>
-                  WordPress.com と違って、今回作った HTML / CSS / JavaScript をほぼそのまま使えます。
-                  個人開発ソフトの配布ページには GitHub Pages がかなり相性のよい公開方法です。
-                </p>
-                <p>
-                  手順は、GitHubアカウントを作る、新しいリポジトリを作る、サイトファイルをアップロードする、
-                  Settings → Pages を開く、main ブランチを選んで公開する、表示されたURLにアクセスする、という流れです。
-                </p>
-                <p>
-                  配布ファイルが大きい場合、DMG や EXE は GitHub Releases に置いて、サイト側からそこへリンクするのがおすすめです。
-                </p>
-                <p class="ai-prompt">Q. リポジトリの Settings → Pages を開くはどこですか</p>
-                <p class="ai-response">
-                  リポジトリ画面の上部メニューにある Settings を開き、左側メニューの Code and automation の中にある Pages をクリックします。
-                </p>
-                <p>
-                  Pages の画面で Source を Deploy from a branch にし、Branch は main、フォルダは /root を選んで Save を押します。
-                  しばらく待つとページ上部に公開URLが表示されます。
-                </p>
-                <p>
-                  まだリポジトリに index.html などが入っていない場合は、Code に戻って Add file → Upload files から
-                  index.html、style.css、script.js、assets フォルダをアップロードし、Commit changes を押してから Pages 設定に戻ります。
-                </p>
-              </article>
-              <article class="ai-entry">
-                <time datetime="2026-05-10">2026.05.10</time>
-                <h3>GitHub Pagesで公開サイトを作成</h3>
-                <p>
-                  WordPressからGitHub Pagesへ公開方法を切り替え、macOS用サイトとWindows用サイトを分けて整理しました。
-                </p>
-                <p class="ai-prompt">Q. GitHub Pagesとは？</p>
-                <p class="ai-response">A. GitHub上のHTML/CSS/JavaScriptを無料で公開できる仕組みです。</p>
-              </article>
-              <article class="ai-entry">
-                <time datetime="2026-05-10">2026.05.10</time>
-                <h3>問い合わせリンクをメール起動に変更</h3>
-                <p>
-                  サポート欄を「お問い合わせ」に整理し、メールアドレスへ連絡できるようにしました。
-                </p>
-              </article>
-            </div>
+            <pre class="ai-log ai-raw">YsBatteryMonitor-mac.dmg
+これを公開する方法は
+4月26日 18:59
+
+
+25s作業しました
+この YsBatteryMonitor-mac.dmg は GitHub Releases にアップロードして公開するのがおすすめです。サイズも 266KB なので問題ありません。
+
+手順はこうです。
+
+GitHub の yshinada/web リポジトリを開く
+右側、または上部付近にある Releases を開く
+Create a new release を押す
+Choose a tag に例えばこれを入力
+ysbatterymonitor-v1.0.0
+Release title にこれを入力
+YsBatteryMonitor v1.0.0
+説明欄に簡単に書く
+macOS用バッテリーモニターです。
+Attach binaries by dropping them here or selecting them の場所に、このファイルをドラッグ
+/Users/yuji/マイドライブ/00_Mac開発/YsBatteryMonitor/YsBatteryMonitor-mac.dmg
+Publish release を押す
+公開後、DMGのダウンロードURLができます。だいたいこの形です。
+
+https://github.com/yshinada/web/releases/download/ysbatterymonitor-v1.0.0/YsBatteryMonitor-mac.dmg
+そのURLを script.js の YsBatteryMonitor の download に入れれば、サイトのダウンロードボタンから取得できます。
+
+download: "https://github.com/yshinada/web/releases/download/ysbatterymonitor-v1.0.0/YsBatteryMonitor-mac.dmg"
+GitHub Releases に置くと、サイト本体と配布ファイルを分けられるので、あとでバージョンアップするときも楽です。
+
+
+
+
+
+4月26日 18:59
+この画面でOKです。入力する内容はこれで進めてください。
+
+Tag
+上の Tag: Select tag をクリックして、次を入力します。
+
+ysbatterymonitor-v1.0.0
+入力後に Create new tag のような表示が出たら、それを選びます。
+
+Release title
+ここにはこれを入力します。
+
+YsBatteryMonitor v1.0.0
+Release notes
+大きな本文欄にはこれを入れてください。
+
+macOS用バッテリーモニターです。
+
+## ダウンロード
+
+下の Assets から YsBatteryMonitor-mac.dmg をダウンロードしてください。
+Attach binaries
+点線の枠、
+
+Attach binaries by dropping them here or selecting them.
+ここにこのファイルをドラッグします。
+
+/Users/yuji/マイドライブ/00_Mac開発/YsBatteryMonitor/YsBatteryMonitor-mac.dmg
+最後に、左下の緑色の Publish release を押します。
+
+公開後、ダウンロードURLはおそらくこれになります。
+
+https://github.com/yshinada/web/releases/download/ysbatterymonitor-v1.0.0/YsBatteryMonitor-mac.dmg
+公開できたら、そのURLをサイトの YsBatteryMonitor のダウンロードボタンに設定します。
+
+
+
+
+
+4月26日 19:02
+これは大丈夫です。
+今のエラーは DMGを説明欄の中に入れてしまった ためです。
+
+赤いエラーに出ているのは、Release notes の本文欄に添付できるファイル形式の制限です。
+DMGはそこには入れられません。
+
+やることはこれです。
+
+今の赤いエラーはそのままでOK
+画面をもう少し下へスクロール
+本文欄の下にある点線の枠を探す
+点線の枠にはこう書いてあります。
+
+Attach binaries by dropping them here or selecting them.
+その点線の枠に YsBatteryMonitor-mac.dmg をドラッグします
+本文欄の中ではなく、本文欄の下の「Attach binaries」枠 です。
+
+もしそこに入れても拒否される場合は、DMGをZIPにして公開します。GitHub Releases なら通常はDMGも置けますが、操作場所を間違えると今のようなエラーになります。
+
+
+
+
+
+4月26日 19:06
+公開できたら、そのURLをサイトの YsBatteryMonitor のダウンロードボタンに設定します。方法は
+4月26日 19:09
+
+
+24s作業しました
+方法は2つあります。いま一番簡単なのは、GitHub上の script.js を編集する方法です。
+
+まず、Release公開後のURLはたぶんこれです。
+
+https://github.com/yshinada/web/releases/download/ysbatterymonitor-v1.0.0/YsBatteryMonitor-mac.dmg
+GitHubでの変更手順です。
+
+yshinada/web リポジトリの Code を開く
+ファイル一覧から script.js をクリック
+右上の鉛筆アイコン、または Edit this file をクリック
+YsBatteryMonitor のところを探す
+この行を探す
+download: "#"
+次のように変更する
+download: "https://github.com/yshinada/web/releases/download/ysbatterymonitor-v1.0.0/YsBatteryMonitor-mac.dmg"
+右上または下の Commit changes を押す
+少し待ってからサイトを再読み込みする
+こちらのローカルファイルは、すでに私が直しておきました。</pre>
           </div>
         </div>
       </section>
