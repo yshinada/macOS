@@ -43,6 +43,7 @@ const programs = [
 
 const list = document.querySelector("#program-list");
 const year = document.querySelector("#year");
+const aiDialogue = document.querySelector("#ai-dialogue-content, .ai-raw");
 
 function createProgramCard(program) {
   const card = document.createElement("article");
@@ -73,3 +74,19 @@ function renderPrograms() {
 
 year.textContent = new Date().getFullYear();
 renderPrograms();
+
+if (aiDialogue) {
+  fetch("ai-dialogue.txt", { cache: "no-cache" })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("AI dialogue content could not be loaded.");
+      }
+      return response.text();
+    })
+    .then((text) => {
+      aiDialogue.textContent = text;
+    })
+    .catch(() => {
+      aiDialogue.textContent = "AIとの会話を読み込めませんでした。";
+    });
+}
