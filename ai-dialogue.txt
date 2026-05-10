@@ -1,0 +1,379 @@
+Windowsに下記プログラムを追加しましたので
+公開プログラムに反映してください
+/Users/yuji/01_Windows開発/SystemTrayMonitor
+/Users/yuji/01_Windows開発/YsSystemMonitor
+「ダウンロード」横の「問い合わせ」は削除してください。
+できれば、macOS サイトも
+
+8:59
+
+
+40m 6s作業しました
+完了しました。
+
+Windowsサイトに以下を追加しました。
+
+SystemTrayMonitor
+YsSystemMonitor
+また、WindowsサイトとmacOSサイトの両方で、各カードの「ダウンロード」横にあった「問い合わせ」ボタンを削除しました。
+
+確認済みです。
+
+Windowsサイト
+SystemTrayMonitor ZIP
+YsSystemMonitor ZIP
+ZIPはGitHub Actionsで生成して downloads/ に公開しています。GitHub Pagesの反映は完了していますが、ブラウザ側に古い表示が残る場合は再読み込みしてください。
+
+2 個のファイルが変更されました
++20
+-2
+元に戻す
+
+レビューする
+
+/Users/yuji/Documents/Codex/2026-04-26/Windows-site/script.js
+script.js
+
+
+
+
+9:39
+サポートのリンクから「不具合報告・問い合わせ」を「問い合わせ」に修正し
+WordPressへではなく　メーラを起動し「shinada@gmail.com」宛にセットしてください
+
+13:00
+
+
+3m 49s作業しました
+修正完了しました。
+
+macOS / Windows 両方のサポート欄を更新しています。
+
+「不具合報告・問い合わせ」→「問い合わせ」
+「WordPressへ」リンク → メーラー起動
+宛先: shinada@gmail.com
+公開ページでも反映確認済みです。
+
+2 個のファイルが変更されました
++4
+-4
+元に戻す
+
+レビューする
+
+/Users/yuji/Documents/Codex/2026-04-26/Windows-site/index.html
+index.html
+
+
+
+
+13:03
+フォームにすることは可能ですか？
+まだ、修正は不要
+お名前 *
+メール アドレス *
+問い合わせ内容 *
+
+14:15
+
+可能です。
+
+ただし GitHub Pages は静的サイトなので、フォームを置くだけではメール送信できません。方法は主に3つあります。
+
+外部フォームサービスを使う
+例: Formspree / Googleフォーム / Netlify Forms など
+GitHub Pagesでも使いやすいです。おすすめはこれです。
+
+mailto: でメールアプリを開くフォームにする
+入力した内容をメール本文に入れて、メーラーを起動します。
+サーバー不要ですが、送信はユーザーのメールアプリ依存です。
+
+自前の送信サーバーを用意する
+お問い合わせを確実にメール送信できますが、設定が少し難しくなります。
+
+項目は問題なく作れます。
+
+お名前 *
+メール アドレス *
+問い合わせ内容 *
+いまのサイトなら、まずは「2. mailtoフォーム」か「1. Formspree」が現実的です。私は Formspree の方が、ユーザーがメールアプリを設定していなくても送れるので良いと思います。
+
+
+
+
+
+14:15
+Formspree  とは
+14:16
+
+Formspree は、静的サイトでも「問い合わせフォーム」を使えるようにする外部サービスです。
+
+GitHub Pages のようなサイトは、通常フォーム送信を処理するサーバーがありません。Formspree を使うと、フォームに入力された内容を Formspree が受け取り、指定したメールアドレスへ転送してくれます。
+
+できること:
+
+お名前、メールアドレス、問い合わせ内容を送信
+送信内容をメールで受け取る
+GitHub Pages でも使える
+サイトにフォームを埋め込める
+流れはこんな感じです。
+
+Formspree に登録する
+フォーム送信用URLを作る
+サイトのHTMLフォームにそのURLを設定する
+問い合わせが来るとメールで届く
+例:
+
+<form action="https://formspree.io/f/xxxxxxx" method="POST">
+  <label>
+    お名前 *
+    <input type="text" name="name" required>
+  </label>
+
+  <label>
+    メール アドレス *
+    <input type="email" name="email" required>
+  </label>
+
+  <label>
+    問い合わせ内容 *
+    <textarea name="message" required></textarea>
+  </label>
+
+  <button type="submit">送信</button>
+</form>
+メリットは、GitHub Pagesでも本物の問い合わせフォームにできることです。デメリットは、外部サービスの登録が必要なことです。
+
+
+
+
+
+14:16
+サポートのリンク「問い合わせ」を
+「お問い合わせ」に変更してください。
+また、「お問い合わせ」の内容を下記の通りに修正してください
+
+公開中のソフトウェアに関するご質問や、技術的な詳細についてのお問い合わせは、以下のメールアドレスまでご連絡ください。
+
+宛先： SHINADA@gmail.com
+
+※内容によっては回答にお時間をいただく場合がございます。あらかじめご了承ください。
+
+14:24
+
+
+4m 18s作業しました
+修正完了しました。
+
+macOS / Windows 両方で、サポート欄を以下に変更しています。
+
+見出し: お問い合わせ
+本文: ご指定の文章
+宛先表示: SHINADA@gmail.com
+メールボタンは引き続き mailto:shinada@gmail.com でメーラー起動
+公開ページでも反映確認済みです。
+
+2 個のファイルが変更されました
++12
+-4
+元に戻す
+
+レビューする
+
+/Users/yuji/Documents/Codex/2026-04-26/Windows-site/index.html
+index.html
+
+
+
+
+14:28
+カテゴリとして「AIとの会話」ページを作成したいと思います。「AIとの会話」に下記内容を反映してください
+Windowsに下記プログラムを追加しましたので
+公開プログラムに反映してください
+/Users/yuji/01_Windows開発/SystemTrayMonitor
+/Users/yuji/01_Windows開発/YsSystemMonitor
+「ダウンロード」横の「問い合わせ」は削除してください。
+できれば、macOS サイトも
+
+8:59
+
+
+40m 6s作業しました
+完了しました。
+
+Windowsサイトに以下を追加しました。
+
+SystemTrayMonitor
+YsSystemMonitor
+また、WindowsサイトとmacOSサイトの両方で、各カードの「ダウンロード」横にあった「問い合わせ」ボタンを削除しました。
+
+確認済みです。
+
+Windowsサイト
+SystemTrayMonitor ZIP
+YsSystemMonitor ZIP
+ZIPはGitHub Actionsで生成して downloads/ に公開しています。GitHub Pagesの反映は完了していますが、ブラウザ側に古い表示が残る場合は再読み込みしてください。
+
+2 個のファイルが変更されました
++20
+-2
+元に戻す
+
+レビューする
+
+/Users/yuji/Documents/Codex/2026-04-26/Windows-site/script.js
+script.js
+
+
+
+
+9:39
+サポートのリンクから「不具合報告・問い合わせ」を「問い合わせ」に修正し
+WordPressへではなく　メーラを起動し「shinada@gmail.com」宛にセットしてください
+
+13:00
+
+
+3m 49s作業しました
+修正完了しました。
+
+macOS / Windows 両方のサポート欄を更新しています。
+
+「不具合報告・問い合わせ」→「問い合わせ」
+「WordPressへ」リンク → メーラー起動
+宛先: shinada@gmail.com
+公開ページでも反映確認済みです。
+
+2 個のファイルが変更されました
++4
+-4
+元に戻す
+
+レビューする
+
+/Users/yuji/Documents/Codex/2026-04-26/Windows-site/index.html
+index.html
+
+
+
+
+13:03
+フォームにすることは可能ですか？
+まだ、修正は不要
+お名前 *
+メール アドレス *
+問い合わせ内容 *
+
+14:15
+
+可能です。
+
+ただし GitHub Pages は静的サイトなので、フォームを置くだけではメール送信できません。方法は主に3つあります。
+
+外部フォームサービスを使う
+例: Formspree / Googleフォーム / Netlify Forms など
+GitHub Pagesでも使いやすいです。おすすめはこれです。
+
+mailto: でメールアプリを開くフォームにする
+入力した内容をメール本文に入れて、メーラーを起動します。
+サーバー不要ですが、送信はユーザーのメールアプリ依存です。
+
+自前の送信サーバーを用意する
+お問い合わせを確実にメール送信できますが、設定が少し難しくなります。
+
+項目は問題なく作れます。
+
+お名前 *
+メール アドレス *
+問い合わせ内容 *
+いまのサイトなら、まずは「2. mailtoフォーム」か「1. Formspree」が現実的です。私は Formspree の方が、ユーザーがメールアプリを設定していなくても送れるので良いと思います。
+
+
+
+
+
+14:15
+Formspree  とは
+14:16
+
+Formspree は、静的サイトでも「問い合わせフォーム」を使えるようにする外部サービスです。
+
+GitHub Pages のようなサイトは、通常フォーム送信を処理するサーバーがありません。Formspree を使うと、フォームに入力された内容を Formspree が受け取り、指定したメールアドレスへ転送してくれます。
+
+できること:
+
+お名前、メールアドレス、問い合わせ内容を送信
+送信内容をメールで受け取る
+GitHub Pages でも使える
+サイトにフォームを埋め込める
+流れはこんな感じです。
+
+Formspree に登録する
+フォーム送信用URLを作る
+サイトのHTMLフォームにそのURLを設定する
+問い合わせが来るとメールで届く
+例:
+
+<form action="https://formspree.io/f/xxxxxxx" method="POST">
+  <label>
+    お名前 *
+    <input type="text" name="name" required>
+  </label>
+
+  <label>
+    メール アドレス *
+    <input type="email" name="email" required>
+  </label>
+
+  <label>
+    問い合わせ内容 *
+    <textarea name="message" required></textarea>
+  </label>
+
+  <button type="submit">送信</button>
+</form>
+メリットは、GitHub Pagesでも本物の問い合わせフォームにできることです。デメリットは、外部サービスの登録が必要なことです。
+
+
+
+
+
+14:16
+サポートのリンク「問い合わせ」を
+「お問い合わせ」に変更してください。
+また、「お問い合わせ」の内容を下記の通りに修正してください
+
+公開中のソフトウェアに関するご質問や、技術的な詳細についてのお問い合わせは、以下のメールアドレスまでご連絡ください。
+
+宛先： SHINADA@gmail.com
+
+※内容によっては回答にお時間をいただく場合がございます。あらかじめご了承ください。
+
+14:24
+
+
+4m 18s作業しました
+修正完了しました。
+
+macOS / Windows 両方で、サポート欄を以下に変更しています。
+
+見出し: お問い合わせ
+本文: ご指定の文章
+宛先表示: SHINADA@gmail.com
+メールボタンは引き続き mailto:shinada@gmail.com でメーラー起動
+公開ページでも反映確認済みです。
+
+2 個のファイルが変更されました
++12
+-4
+元に戻す
+
+レビューする
+
+/Users/yuji/Documents/Codex/2026-04-26/Windows-site/index.html
+index.html
+
+
+
+
+14:28
