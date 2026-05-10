@@ -450,6 +450,13 @@ h3 {
   line-height: 1.75;
 }
 
+.ai-raw {
+  display: block;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
 .ai-entry {
   padding-bottom: 18px;
   border-bottom: 1px solid rgba(97, 211, 148, 0.18);
