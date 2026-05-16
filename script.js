@@ -20,6 +20,16 @@ const programs = [
     download: "https://github.com/yshinada/web/releases/download/ysbatterymonitor-v1.0.0/YsBatteryMonitor-mac.dmg"
   },
   {
+    name: "MP3Player",
+    platform: "mac",
+    version: "v1.0.0",
+    icon: "MP",
+    color: "#c06a3d",
+    summary: "MP3ファイルやフォルダを開いて、曲名一覧から再生できる軽量プレイヤーです。",
+    tags: ["macOS", "MP3", "音楽"],
+    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/MP3Player-mac.zip"
+  },
+  {
     name: "CPULoader",
     platform: "mac",
     version: "v1.5",
