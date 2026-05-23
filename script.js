@@ -27,7 +27,7 @@ const programs = [
     color: "#c06a3d",
     summary: "MP3ファイルやフォルダを開いて、曲名一覧から再生できる軽量プレイヤーです。",
     tags: ["macOS", "MP3", "音楽"],
-    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/MP3Player-mac.zip"
+    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/MP3Player-mac.dmg"
   },
   {
     name: "CPULoader",
@@ -37,7 +37,7 @@ const programs = [
     color: "#8f5fd7",
     summary: "CPU負荷を調整しながら動作確認できる、テスト用ユーティリティです。",
     tags: ["macOS", "CPU", "テスト"],
-    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/CPULoader-mac.zip"
+    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/CPULoader-mac.dmg"
   },
   {
     name: "YsDiskMonitor",
