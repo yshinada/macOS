@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yshinada.github.io/macOS/sitemap.xml

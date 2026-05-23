@@ -7,10 +7,13 @@
 - `index.html`: サイト本体
 - `style.css`: デザイン
 - `script.js`: 公開プログラム一覧
+- `robots.txt`: 検索エンジン向けクロール設定
+- `sitemap.xml`: 検索エンジン向けサイトマップ
 - `assets/hero-software-workspace.png`: ヒーロー画像
 - `downloads/YsMP3Player-mac.dmg`: YsMP3Player 配布ファイル
 - `downloads/YsCPULoader-mac.dmg`: YsCPULoader 配布ファイル
 - `downloads/YsClock-1.0.dmg`: YsClock 配布ファイル
+- `downloads/YsDiskMonitor-mac.dmg`: YsDiskMonitor 配布ファイル
 
 ## プログラム情報の変更
 
@@ -27,7 +30,13 @@
 }
 ```
 
-`download: "#"` は仮リンクです。実際の ZIP / DMG / EXE のURLに差し替えてください。
+`download: "#"` は仮リンクです。実際の DMG / ZIP / EXE のURLに差し替えてください。
+
+## 検索エンジン向け設定
+
+検索されやすくするため、`index.html` に説明文、canonical、OG/Twitter用メタ情報、構造化データを入れています。
+
+ページ構成や公開URLを変更した場合は、`sitemap.xml` のURLと更新日も合わせて変更してください。
 
 ## ローカル確認
 

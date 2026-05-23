@@ -56,6 +56,7 @@ const year = document.querySelector("#year");
 const aiDialogue = document.querySelector("#ai-dialogue-content, .ai-raw");
 
 function createProgramCard(program) {
+  const fileName = program.download.split("/").pop();
   const card = document.createElement("article");
   card.className = "program-card";
   card.dataset.platform = program.platform;
@@ -71,7 +72,7 @@ function createProgramCard(program) {
       ${program.tags.map((tag) => `<span class="pill">${tag}</span>`).join("")}
     </div>
     <div class="card-actions">
-      <a class="button primary" href="${program.download}">ダウンロード</a>
+      <a class="button primary" href="${program.download}" download="${fileName}" aria-label="${program.name} ${program.version} をダウンロード">ダウンロード</a>
     </div>
   `;
   return card;

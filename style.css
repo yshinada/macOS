@@ -264,6 +264,12 @@ h3 {
   background: var(--accent);
 }
 
+.program-intro {
+  max-width: 880px;
+  margin: -10px 0 28px;
+  color: var(--muted);
+}
+
 .program-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
