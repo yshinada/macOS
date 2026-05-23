@@ -1,3 +1,78 @@
+MP3Player とCPULoaderの配布がzipになっています。
+これをYsClockのようにDMPに修正してほしい
+13:19
+
+
+5m 17s作業しました
+対応しました。MP3Player と CPULoader の配布形式を ZIP から DMG に変更して、GitHubへPush済みです。
+
+変更内容:
+MP3Player-mac.dmg を作成
+CPULoader-mac.dmg を作成
+旧 MP3Player-mac.zip / CPULoader-mac.zip は配布対象から削除
+サイトのダウンロードリンクを .dmg に変更
+更新履歴に「MP3Player と CPULoader の配布形式を DMG に変更。」を追加
+
+確認済み:
+両方のDMGは hdiutil verify で検証OK
+GitHub Pages の script.js もDMGリンクに更新済み
+DMGの公開URLは 200 OK
+
+公開サイト:
+https://yshinada.github.io/macOS/
+
+README.md
+ドキュメント・MD
+次で開く
+3 件のファイルを編集しました
++8
+-3
+元に戻す
+レビューする
+/Users/yuji/Documents/Codex/2026-05-16/files-mentioned-by-the-user-mp3player/macOS-work/README.md
+/Users/yuji/Documents/Codex/2026-05-16/files-mentioned-by-the-user-mp3player/macOS-work/index.html
+/Users/yuji/Documents/Codex/2026-05-16/files-mentioned-by-the-user-mp3player/macOS-work/script.js
+13:25
+
+
+CPULoaderをYsCPULoaderに修正、関係箇所を修正
+MP3PlayerをYsMP3Playerに修正、関係箇所を修正
+13:31
+
+
+5m 34s作業しました
+完了しました。CPULoader を YsCPULoader、MP3Player を YsMP3Player に変更し、関係箇所も更新しました。
+
+対応内容:
+アプリ本体名: YsCPULoader.app / YsMP3Player.app
+Bundle名、実行ファイル名、Bundle Identifier を新名称に変更
+配布DMG名: YsCPULoader-mac.dmg / YsMP3Player-mac.dmg
+サイト表示名とダウンロードリンクを新名称に変更
+更新履歴とREADMEも修正
+GitHubへPush済み
+
+確認済み:
+両方のDMGは hdiutil verify OK
+DMG内の .app 名も新名称
+公開URLは 200 OK
+
+公開サイト:
+https://yshinada.github.io/macOS/
+
+README.md
+ドキュメント・MD
+次で開く
+8 件のファイルを編集しました
++28
+-24
+元に戻す
+レビューする
+/Users/yuji/00_Mac開発/CPULoader/Info.plist
+/Users/yuji/00_Mac開発/CPULoader/build.sh
+/Users/yuji/00_Mac開発/MP3Player/MP3Player/Info.plist
+あと 5 個のファイルを表示
+
+
 Windowsに下記プログラムを追加しましたので
 公開プログラムに反映してください
 /Users/yuji/01_Windows開発/SystemTrayMonitor
@@ -378,77 +453,3 @@ index.html
 
 
 14:28
-
-MP3Player とCPULoaderの配布がzipになっています。
-これをYsClockのようにDMPに修正してほしい
-13:19
-
-
-5m 17s作業しました
-対応しました。MP3Player と CPULoader の配布形式を ZIP から DMG に変更して、GitHubへPush済みです。
-
-変更内容:
-MP3Player-mac.dmg を作成
-CPULoader-mac.dmg を作成
-旧 MP3Player-mac.zip / CPULoader-mac.zip は配布対象から削除
-サイトのダウンロードリンクを .dmg に変更
-更新履歴に「MP3Player と CPULoader の配布形式を DMG に変更。」を追加
-
-確認済み:
-両方のDMGは hdiutil verify で検証OK
-GitHub Pages の script.js もDMGリンクに更新済み
-DMGの公開URLは 200 OK
-
-公開サイト:
-https://yshinada.github.io/macOS/
-
-README.md
-ドキュメント・MD
-次で開く
-3 件のファイルを編集しました
-+8
--3
-元に戻す
-レビューする
-/Users/yuji/Documents/Codex/2026-05-16/files-mentioned-by-the-user-mp3player/macOS-work/README.md
-/Users/yuji/Documents/Codex/2026-05-16/files-mentioned-by-the-user-mp3player/macOS-work/index.html
-/Users/yuji/Documents/Codex/2026-05-16/files-mentioned-by-the-user-mp3player/macOS-work/script.js
-13:25
-
-
-CPULoaderをYsCPULoaderに修正、関係箇所を修正
-MP3PlayerをYsMP3Playerに修正、関係箇所を修正
-13:31
-
-
-5m 34s作業しました
-完了しました。CPULoader を YsCPULoader、MP3Player を YsMP3Player に変更し、関係箇所も更新しました。
-
-対応内容:
-アプリ本体名: YsCPULoader.app / YsMP3Player.app
-Bundle名、実行ファイル名、Bundle Identifier を新名称に変更
-配布DMG名: YsCPULoader-mac.dmg / YsMP3Player-mac.dmg
-サイト表示名とダウンロードリンクを新名称に変更
-更新履歴とREADMEも修正
-GitHubへPush済み
-
-確認済み:
-両方のDMGは hdiutil verify OK
-DMG内の .app 名も新名称
-公開URLは 200 OK
-
-公開サイト:
-https://yshinada.github.io/macOS/
-
-README.md
-ドキュメント・MD
-次で開く
-8 件のファイルを編集しました
-+28
--24
-元に戻す
-レビューする
-/Users/yuji/00_Mac開発/CPULoader/Info.plist
-/Users/yuji/00_Mac開発/CPULoader/build.sh
-/Users/yuji/00_Mac開発/MP3Player/MP3Player/Info.plist
-あと 5 個のファイルを表示
