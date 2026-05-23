@@ -7,7 +7,7 @@ const programs = [
     color: "#0d6f8f",
     summary: "デスクトップに置きやすい、シンプルなアナログ時計アプリです。",
     tags: ["macOS", "時計", "ユーティリティ"],
-    download: "#"
+    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/YsClock-1.0.dmg"
   },
   {
     name: "YsBatteryMonitor",

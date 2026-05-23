@@ -9,6 +9,7 @@
 - `script.js`: 公開プログラム一覧
 - `assets/hero-software-workspace.png`: ヒーロー画像
 - `downloads/MP3Player-mac.zip`: MP3Player 配布ファイル
+- `downloads/YsClock-1.0.dmg`: YsClock 配布ファイル
 
 ## プログラム情報の変更
 
