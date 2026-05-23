@@ -20,24 +20,24 @@ const programs = [
     download: "https://github.com/yshinada/web/releases/download/ysbatterymonitor-v1.0.0/YsBatteryMonitor-mac.dmg"
   },
   {
-    name: "MP3Player",
+    name: "YsMP3Player",
     platform: "mac",
     version: "v1.0.0",
-    icon: "MP",
+    icon: "YM",
     color: "#c06a3d",
     summary: "MP3ファイルやフォルダを開いて、曲名一覧から再生できる軽量プレイヤーです。",
     tags: ["macOS", "MP3", "音楽"],
-    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/MP3Player-mac.dmg"
+    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/YsMP3Player-mac.dmg"
   },
   {
-    name: "CPULoader",
+    name: "YsCPULoader",
     platform: "mac",
     version: "v1.5",
-    icon: "CL",
+    icon: "YCL",
     color: "#8f5fd7",
     summary: "CPU負荷を調整しながら動作確認できる、テスト用ユーティリティです。",
     tags: ["macOS", "CPU", "テスト"],
-    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/CPULoader-mac.dmg"
+    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/YsCPULoader-mac.dmg"
   },
   {
     name: "YsDiskMonitor",
