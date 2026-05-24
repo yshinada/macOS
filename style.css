@@ -534,6 +534,31 @@ h3 {
   font-weight: 700;
 }
 
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.visit-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid rgba(33, 199, 217, 0.28);
+  border-radius: 8px;
+  color: #c5d1d9;
+  background: rgba(33, 199, 217, 0.08);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.visit-counter strong {
+  color: #fff;
+  font-size: 1rem;
+}
+
 @media (max-width: 880px) {
   .site-header,
   .section-heading,
@@ -559,6 +584,12 @@ h3 {
 
   .support-band .button {
     justify-self: start;
+  }
+
+  .footer-links {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 

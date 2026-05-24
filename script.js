@@ -54,6 +54,8 @@ const programs = [
 const list = document.querySelector("#program-list");
 const year = document.querySelector("#year");
 const aiDialogue = document.querySelector("#ai-dialogue-content, .ai-raw");
+const visitCount = document.querySelector("#visit-count");
+const counterEndpoint = "https://api.counterapi.dev/v1/yshinada-macos/home-page-views/up";
 
 function createProgramCard(program) {
   const fileName = program.download.split("/").pop();
@@ -85,6 +87,22 @@ function renderPrograms() {
 
 year.textContent = new Date().getFullYear();
 renderPrograms();
+
+if (visitCount) {
+  fetch(counterEndpoint, { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Visit counter could not be loaded.");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      visitCount.textContent = Number(data.count).toLocaleString("ja-JP");
+    })
+    .catch(() => {
+      visitCount.textContent = "集計中";
+    });
+}
 
 if (aiDialogue) {
   fetch("ai-dialogue.txt", { cache: "no-cache" })
