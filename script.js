@@ -26,7 +26,7 @@ const programs = [
     platform: "mac",
     version: "v1.0.0",
     icon: "YB",
-    image: "assets/YsBatteryMonitor-icon.png",
+    image: "assets/YsBatteryMonitor-icon.svg",
     color: "#4f7f63",
     summary: "バッテリー状態を見やすく確認するための軽量モニターです。",
     tags: ["macOS", "バッテリー", "常駐"],
