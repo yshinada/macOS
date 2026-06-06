@@ -10,6 +10,8 @@
 - `robots.txt`: 検索エンジン向けクロール設定
 - `sitemap.xml`: 検索エンジン向けサイトマップ
 - `assets/hero-software-workspace.png`: ヒーロー画像
+- `assets/YsPhotoRunner-icon.png`: YsPhotoRunner アイコン
+- `downloads/YsPhotoRunner-1.1.dmg`: YsPhotoRunner 配布ファイル
 - `downloads/YsMP3Player-mac.dmg`: YsMP3Player 配布ファイル
 - `downloads/YsCPULoader-mac.dmg`: YsCPULoader 配布ファイル
 - `downloads/YsClock-1.0.dmg`: YsClock 配布ファイル

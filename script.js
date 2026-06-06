@@ -1,5 +1,16 @@
 const programs = [
   {
+    name: "YsPhotoRunner",
+    platform: "mac",
+    version: "v1.1",
+    icon: "YP",
+    image: "assets/YsPhotoRunner-icon.png",
+    color: "#27bfc7",
+    summary: "JPGとRAWデータをEXIF撮影日時で年月フォルダへ整理する写真コピーアプリです。",
+    tags: ["macOS", "写真整理", "RAW", "EXIF"],
+    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/YsPhotoRunner-1.1.dmg"
+  },
+  {
     name: "YsClock",
     platform: "mac",
     version: "v1.0.0",
@@ -63,7 +74,11 @@ function createProgramCard(program) {
   card.className = "program-card";
   card.dataset.platform = program.platform;
   card.innerHTML = `
-    <div class="program-icon" style="--icon-bg: ${program.color}">${program.icon}</div>
+    ${
+      program.image
+        ? `<img class="program-icon program-icon-image" src="${program.image}" alt="${program.name} アイコン">`
+        : `<div class="program-icon" style="--icon-bg: ${program.color}">${program.icon}</div>`
+    }
     <div class="program-meta">
       <span class="pill">${program.platform === "mac" ? "Mac" : "Windows"}</span>
       <span class="pill">${program.version}</span>
