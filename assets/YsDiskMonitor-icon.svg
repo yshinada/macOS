@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="YsDiskMonitor">
+  <rect x="38" y="38" width="436" height="436" rx="116" fill="#121923" stroke="#11a9fa" stroke-width="14"/>
+  <text x="256" y="260" fill="#fff" font-family="Arial,sans-serif" font-size="138" font-weight="700" text-anchor="middle">DF</text>
+  <rect x="102" y="308" width="308" height="64" rx="32" fill="#f8f8f8"/>
+  <rect x="102" y="308" width="215" height="64" rx="32" fill="#129cf2"/>
+</svg>
