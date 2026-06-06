@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="YsMP3Player">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#222a35"/><stop offset="1" stop-color="#070b10"/></linearGradient>
+    <linearGradient id="note" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#d5d9df"/></linearGradient>
+  </defs>
+  <rect x="24" y="24" width="464" height="464" rx="108" fill="url(#bg)" stroke="#173a62" stroke-width="8"/>
+  <g fill="#18a8ff">
+    <rect x="42" y="246" width="10" height="20" rx="5"/><rect x="62" y="226" width="10" height="60" rx="5"/>
+    <rect x="82" y="202" width="10" height="108" rx="5"/><rect x="102" y="220" width="10" height="72" rx="5"/>
+    <rect x="122" y="184" width="10" height="144" rx="5"/><rect x="142" y="150" width="10" height="212" rx="5"/>
+    <rect x="162" y="184" width="10" height="144" rx="5"/><rect x="182" y="220" width="10" height="72" rx="5"/>
+    <rect x="400" y="202" width="10" height="108" rx="5"/><rect x="420" y="226" width="10" height="60" rx="5"/>
+    <rect x="440" y="246" width="10" height="20" rx="5"/>
+  </g>
+  <path d="M205 158v210c-20-12-54-2-68 22-15 26-5 53 22 59 29 7 65-13 69-42V229l154-50v139c-20-12-54-2-68 22-15 26-5 53 22 59 29 7 65-13 69-42V92z" fill="url(#note)" stroke="#bcc3cc" stroke-width="5"/>
+</svg>
