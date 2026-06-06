@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="YsBatteryMonitor">
+  <defs>
+    <linearGradient id="charge" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#22b7ff"/>
+      <stop offset="1" stop-color="#0789ee"/>
+    </linearGradient>
+  </defs>
+  <rect x="38" y="38" width="436" height="436" rx="116" fill="#121923" stroke="#149df2" stroke-width="14"/>
+  <rect x="106" y="164" width="278" height="184" rx="48" fill="#0b1017" stroke="#e8f3fa" stroke-width="14"/>
+  <path d="M384 216h28c18 0 32 14 32 32v16c0 18-14 32-32 32h-28z" fill="#149df2"/>
+  <rect x="130" y="188" width="190" height="136" rx="30" fill="url(#charge)"/>
+  <path d="m244 202-58 72h48l-12 52 68-82h-50z" fill="#fff"/>
+</svg>
