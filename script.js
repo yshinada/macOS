@@ -71,6 +71,7 @@ const list = document.querySelector("#program-list");
 const year = document.querySelector("#year");
 const aiDialogue = document.querySelector("#ai-dialogue-content, .ai-raw");
 const visitCount = document.querySelector("#visit-count");
+const programIntro = document.querySelector(".program-intro");
 const counterEndpoint = "https://api.counterapi.dev/v1/yshinada-macos/home-page-views/up";
 
 function createProgramCard(program) {
@@ -106,6 +107,7 @@ function renderPrograms() {
 }
 
 year.textContent = new Date().getFullYear();
+programIntro.textContent = programIntro.textContent.replace("YUJI1960 が制作した ", "");
 renderPrograms();
 
 if (visitCount) {
