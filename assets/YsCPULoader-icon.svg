@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="YsCPULoader">
+  <defs>
+    <linearGradient id="frame" x1="72" y1="48" x2="440" y2="464" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b06cff"/>
+      <stop offset="1" stop-color="#7040d8"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="164" y1="156" x2="348" y2="356" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#313844"/>
+      <stop offset="1" stop-color="#171c24"/>
+    </linearGradient>
+  </defs>
+  <rect x="38" y="38" width="436" height="436" rx="116" fill="#121923" stroke="url(#frame)" stroke-width="14"/>
+  <g stroke="#a96aff" stroke-linecap="round" stroke-width="16">
+    <path d="M176 102v54M230 102v54M282 102v54M336 102v54"/>
+    <path d="M176 356v54M230 356v54M282 356v54M336 356v54"/>
+    <path d="M102 176h54M102 230h54M102 282h54M102 336h54"/>
+    <path d="M356 176h54M356 230h54M356 282h54M356 336h54"/>
+  </g>
+  <rect x="148" y="148" width="216" height="216" rx="52" fill="url(#chip)" stroke="#c7a1ff" stroke-width="8"/>
+  <path d="M205 292c22-68 47-93 76-74 17 11 24 35 34 2" fill="none" stroke="#b777ff" stroke-linecap="round" stroke-width="19"/>
+  <circle cx="205" cy="292" r="13" fill="#f4edff"/>
+  <circle cx="315" cy="220" r="13" fill="#f4edff"/>
+</svg>
