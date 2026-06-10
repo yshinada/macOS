@@ -77,7 +77,7 @@ const counterEndpoint = "https://api.counterapi.dev/v1/yshinada-macos/home-page-
 function createProgramCard(program) {
   const action = program.download
     ? `<a class="button primary" href="${program.download}" download="${program.download.split("/").pop()}" aria-label="${program.name} ${program.version} をダウンロード">ダウンロード</a>`
-    : `<span class="button coming-soon" aria-label="${program.name} ${program.availability}">${program.availability}</span>`;
+    : `<span class="button coming-soon" style="cursor:default;border-color:rgba(33,199,217,.3);color:#b8e9ed;background:rgba(33,199,217,.1)" aria-label="${program.name} ${program.availability}">${program.availability}</span>`;
   const card = document.createElement("article");
   card.className = "program-card";
   card.dataset.platform = program.platform;
@@ -109,7 +109,9 @@ function renderPrograms() {
 }
 
 year.textContent = new Date().getFullYear();
-programIntro.textContent = programIntro.textContent.replace("YUJI1960 が制作した ", "");
+programIntro.textContent = "写真とRAWデータを撮影日で整理する YsPhotoRunner は、Mac App Storeで近日公開予定です。YsClock、YsMP3Player、YsCPULoader、YsDiskMonitor などのMac向けフリーソフトも配布しています。";
+const firstUpdate = document.querySelector(".timeline li:first-child span");
+if (firstUpdate) firstUpdate.textContent = "写真・RAW整理アプリ YsPhotoRunner v1.1 をMac App Storeへ審査提出。";
 renderPrograms();
 
 if (visitCount) {
