@@ -8,7 +8,7 @@ const programs = [
     color: "#27bfc7",
     summary: "JPGとRAWデータをEXIF撮影日時で年月フォルダへ整理する写真コピーアプリです。",
     tags: ["macOS", "写真整理", "RAW", "EXIF"],
-    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/YsPhotoRunner-1.1.dmg"
+    availability: "Mac App Storeで近日公開"
   },
   {
     name: "YsClock",
@@ -75,7 +75,9 @@ const programIntro = document.querySelector(".program-intro");
 const counterEndpoint = "https://api.counterapi.dev/v1/yshinada-macos/home-page-views/up";
 
 function createProgramCard(program) {
-  const fileName = program.download.split("/").pop();
+  const action = program.download
+    ? `<a class="button primary" href="${program.download}" download="${program.download.split("/").pop()}" aria-label="${program.name} ${program.version} をダウンロード">ダウンロード</a>`
+    : `<span class="button coming-soon" aria-label="${program.name} ${program.availability}">${program.availability}</span>`;
   const card = document.createElement("article");
   card.className = "program-card";
   card.dataset.platform = program.platform;
@@ -95,7 +97,7 @@ function createProgramCard(program) {
       ${program.tags.map((tag) => `<span class="pill">${tag}</span>`).join("")}
     </div>
     <div class="card-actions">
-      <a class="button primary" href="${program.download}" download="${fileName}" aria-label="${program.name} ${program.version} をダウンロード">ダウンロード</a>
+      ${action}
     </div>
   `;
   return card;
