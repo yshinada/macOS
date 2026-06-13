@@ -57,7 +57,7 @@ const programs = [
     name: "YsDiskMonitor",
     platform: "mac",
     version: "v1.0.0",
-    image: "assets/YsDiskMonitor-icon.svg",
+    image: "assets/YsDiskMonitor-icon-v2.svg",
     summary: "ディスク使用率と空き容量をメニューバーで確認できる軽量モニターです。",
     tags: ["macOS", "ディスク", "常駐"],
     availability: "Mac App Storeで近日公開"
