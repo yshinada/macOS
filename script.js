@@ -6,7 +6,7 @@ const programs = [
     image: "assets/YsSystemMonitor-icon.svg",
     summary: "CPU・熱負荷・メモリ使用率をメニューバーで確認できる軽量システムモニターです。",
     tags: ["macOS", "システム監視", "CPU", "メモリ"],
-    availability: "Mac App Storeで近日公開"
+    appStore: "https://apps.apple.com/jp/app/yssystemmonitor/id6779603096"
   },
   {
     name: "YsCL",
@@ -24,7 +24,7 @@ const programs = [
     image: "assets/YsPhotoRunner-icon.png",
     summary: "JPGとRAWデータをEXIF撮影日時で年月フォルダへ整理する写真コピーアプリです。",
     tags: ["macOS", "写真整理", "RAW", "EXIF"],
-    availability: "Mac App Storeで近日公開"
+    appStore: "https://apps.apple.com/jp/app/ysphotorunner/id6778758760"
   },
   {
     name: "YsClock",
@@ -69,7 +69,7 @@ const programs = [
     image: "assets/YsDiskMonitor-icon-v2.svg",
     summary: "ディスク使用率と空き容量をメニューバーで確認できる軽量モニターです。",
     tags: ["macOS", "ディスク", "常駐"],
-    availability: "Mac App Storeで近日公開"
+    appStore: "https://apps.apple.com/jp/app/ysdiskmonitor/id6779870517"
   }
 ];
 
@@ -81,7 +81,9 @@ const programIntro = document.querySelector(".program-intro");
 const counterEndpoint = "https://api.counterapi.dev/v1/yshinada-macos/home-page-views/up";
 
 function createProgramCard(program) {
-  const action = program.download
+  const action = program.appStore
+    ? `<a class="button primary" href="${program.appStore}" target="_blank" rel="noopener" aria-label="${program.name} ${program.version} をMac App Storeで開く">Mac App Storeで見る</a>`
+    : program.download
     ? `<a class="button primary" href="${program.download}" download="${program.download.split("/").pop()}" aria-label="${program.name} ${program.version} をダウンロード">ダウンロード</a>`
     : `<span class="button coming-soon" style="cursor:default;border-color:rgba(33,199,217,.3);color:#b8e9ed;background:rgba(33,199,217,.1)" aria-label="${program.name} ${program.availability}">${program.availability}</span>`;
   const card = document.createElement("article");
@@ -103,7 +105,7 @@ function renderPrograms() {
 }
 
 year.textContent = new Date().getFullYear();
-programIntro.textContent = "CPU・熱負荷・メモリを確認できる YsSystemMonitor、クリップボード履歴を素早く呼び出せる YsCL、写真・RAWデータを撮影日で整理する YsPhotoRunner は、Mac App Storeで近日公開予定です。YsClock、YsMP3Player、YsCPULoader、YsDiskMonitor などのMac向けフリーソフトも配布しています。";
+programIntro.textContent = "CPU・熱負荷・メモリを確認できる YsSystemMonitor、写真・RAWデータを撮影日で整理する YsPhotoRunner、ディスク使用率を確認できる YsDiskMonitor はMac App Storeで公開中です。YsCLはMac App Storeで近日公開予定です。YsClock、YsMP3Player、YsCPULoader などのMac向けフリーソフトも配布しています。";
 renderPrograms();
 
 if (visitCount) {
