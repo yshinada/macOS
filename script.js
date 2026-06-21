@@ -15,7 +15,7 @@ const programs = [
     image: "assets/YsCL-icon.svg",
     summary: "コピーしたテキストを蓄積し、呼び出しキーから素早く選択・ペーストできるクリップボード履歴アプリです。",
     tags: ["macOS", "クリップボード", "履歴", "常駐"],
-    availability: "Mac App Storeで近日公開"
+    availability: "無料公開中"
   },
   {
     name: "YsPhotoRunner",
@@ -105,7 +105,7 @@ function renderPrograms() {
 }
 
 year.textContent = new Date().getFullYear();
-programIntro.textContent = "CPU・熱負荷・メモリを確認できる YsSystemMonitor、写真・RAWデータを撮影日で整理する YsPhotoRunner、ディスク使用率を確認できる YsDiskMonitor はMac App Storeで公開中です。YsCLはMac App Storeで近日公開予定です。YsClock、YsMP3Player、YsCPULoader などのMac向けフリーソフトも配布しています。";
+programIntro.textContent = "CPU・熱負荷・メモリを確認できる YsSystemMonitor、写真・RAWデータを撮影日で整理する YsPhotoRunner、ディスク使用率を確認できる YsDiskMonitor はMac App Storeで公開中です。YsCLは無料公開中です。YsClock、YsMP3Player、YsCPULoader などのMac向けフリーソフトも配布しています。";
 renderPrograms();
 
 if (visitCount) {
