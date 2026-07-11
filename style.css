@@ -266,8 +266,20 @@ h3 {
 
 .program-intro {
   max-width: 880px;
-  margin: -10px 0 28px;
+  margin: -10px 0 14px;
   color: var(--muted);
+}
+
+.security-notice {
+  max-width: 880px;
+  margin: 0 0 30px;
+  padding: 12px 14px;
+  border: 1px solid rgba(230, 179, 90, 0.36);
+  border-radius: 8px;
+  color: #f2d79e;
+  background: rgba(230, 179, 90, 0.1);
+  font-size: 0.92rem;
+  font-weight: 700;
 }
 
 .program-grid {
