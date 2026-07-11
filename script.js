@@ -18,6 +18,15 @@ const programs = [
     availability: "無料公開中"
   },
   {
+    name: "YsRadio",
+    platform: "mac",
+    version: "v1.0",
+    image: "assets/YsRadio-icon.png",
+    summary: "Macのメニューバーからラジオを再生・停止し、放送局を素早く切り替えられる軽量プレイヤーです。",
+    tags: ["macOS", "ラジオ", "メニューバー", "音楽"],
+    download: "https://raw.githubusercontent.com/yshinada/macOS/main/downloads/YsRadio-mac.dmg"
+  },
+  {
     name: "YsPhotoRunner",
     platform: "mac",
     version: "v1.1",
@@ -105,7 +114,7 @@ function renderPrograms() {
 }
 
 year.textContent = new Date().getFullYear();
-programIntro.textContent = "CPU・熱負荷・メモリを確認できる YsSystemMonitor、写真・RAWデータを撮影日で整理する YsPhotoRunner、ディスク使用率を確認できる YsDiskMonitor はMac App Storeで公開中です。YsCLは無料公開中です。YsClock、YsMP3Player、YsCPULoader などのMac向けフリーソフトも配布しています。";
+programIntro.textContent = "CPU・熱負荷・メモリを確認できる YsSystemMonitor、写真・RAWデータを撮影日で整理する YsPhotoRunner、ディスク使用率を確認できる YsDiskMonitor はMac App Storeで公開中です。YsCLとYsRadioは無料公開中です。YsClock、YsMP3Player、YsCPULoader などのMac向けフリーソフトも配布しています。";
 renderPrograms();
 
 if (visitCount) {
